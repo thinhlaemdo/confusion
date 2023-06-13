@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import React,{Component} from 'react';
+import Helloclasscomponent from './Component/Helloclasscomponent';
+import Hellofuntioncomponent from './Component/Helloclasscomponent';
+import DemoCountClassComponents from './Component/DemoCountClassComponents';
+import DemoFuntionCountComponents from './Component/DemoFuntionCountComponents';
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        {/* <Navbar dark color="primary">
+          <div className="container">
+            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand> */}
+            <header className='App-header'>
+            {/* <Helloclasscomponent/>
+            <Hellofuntioncomponent/> */}
+            <DemoCountClassComponents/>
+            <DemoFuntionCountComponents/>
+            
+            </header>
+           
+          </div>
+    //     </Navbar>
+    //   </div>
+    );
+  }
 }
+
 
 export default App;
